@@ -1,0 +1,6 @@
+[2025-03-27T17:29:34.001+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workflow.Transform scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2025-03-27T17:29:34.028+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workflow.Transform scheduled__2024-03-01T00:00:00+00:00 [queued]>
+[2025-03-27T17:29:34.030+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2025-03-27T17:29:35.517+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-03-27T17:29:35.518+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 143
+[2025-03-27T17:29:35.530+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

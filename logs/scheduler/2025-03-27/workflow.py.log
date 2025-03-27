@@ -1,0 +1,32 @@
+[2025-03-27T17:27:48.058+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/workflow.py
+[2025-03-27T17:27:48.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/workflow.py for tasks to queue
+[2025-03-27T17:27:48.061+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/workflow.py
+[2025-03-27T17:27:48.098+0000] {processor.py:840} INFO - DAG(s) 'workflow' retrieved from /opt/airflow/dags/workflow.py
+[2025-03-27T17:27:48.329+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.328+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:workflow
+[2025-03-27T17:27:48.340+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.340+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:workflow
+[2025-03-27T17:27:48.347+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.347+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:workflow
+[2025-03-27T17:27:48.348+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.347+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-27T17:27:48.360+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.360+0000] {dag.py:3058} INFO - Creating ORM DAG for workflow
+[2025-03-27T17:27:48.374+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:27:48.373+0000] {dag.py:3823} INFO - Setting next_dagrun for workflow to 2024-01-24 00:00:00+00:00, run_after=2024-01-25 00:00:00+00:00
+[2025-03-27T17:27:48.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/workflow.py took 0.339 seconds
+[2025-03-27T17:28:19.058+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:19.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/workflow.py for tasks to queue
+[2025-03-27T17:28:19.060+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:19.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:19.088+0000] {processor.py:840} INFO - DAG(s) 'workflow' retrieved from /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:19.116+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:19.115+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-27T17:28:19.150+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:19.149+0000] {dag.py:3823} INFO - Setting next_dagrun for workflow to 2024-01-24 00:00:00+00:00, run_after=2024-01-25 00:00:00+00:00
+[2025-03-27T17:28:19.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/workflow.py took 0.117 seconds
+[2025-03-27T17:28:49.348+0000] {processor.py:161} INFO - Started process (PID=692) to work on /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:49.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/workflow.py for tasks to queue
+[2025-03-27T17:28:49.350+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:49.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:49.368+0000] {processor.py:840} INFO - DAG(s) 'workflow' retrieved from /opt/airflow/dags/workflow.py
+[2025-03-27T17:28:49.394+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:49.394+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-27T17:28:49.421+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:28:49.421+0000] {dag.py:3823} INFO - Setting next_dagrun for workflow to 2024-01-24 00:00:00+00:00, run_after=2024-01-25 00:00:00+00:00
+[2025-03-27T17:28:49.439+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/workflow.py took 0.095 seconds
+[2025-03-27T17:29:19.911+0000] {processor.py:161} INFO - Started process (PID=1328) to work on /opt/airflow/dags/workflow.py
+[2025-03-27T17:29:19.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/workflow.py for tasks to queue
+[2025-03-27T17:29:19.913+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:29:19.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/workflow.py
+[2025-03-27T17:29:19.926+0000] {processor.py:840} INFO - DAG(s) 'workflow' retrieved from /opt/airflow/dags/workflow.py
+[2025-03-27T17:29:19.945+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:29:19.945+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-27T17:29:19.967+0000] {logging_mixin.py:188} INFO - [2025-03-27T17:29:19.967+0000] {dag.py:3823} INFO - Setting next_dagrun for workflow to 2024-02-24 00:00:00+00:00, run_after=2024-02-25 00:00:00+00:00
+[2025-03-27T17:29:19.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/workflow.py took 0.077 seconds

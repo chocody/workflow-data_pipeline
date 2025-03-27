@@ -1,0 +1,17 @@
+[2025-03-27T17:29:11.865+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workflow.Load scheduled__2024-02-14T00:00:00+00:00 [queued]>
+[2025-03-27T17:29:11.895+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workflow.Load scheduled__2024-02-14T00:00:00+00:00 [queued]>
+[2025-03-27T17:29:11.897+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2025-03-27T17:29:12.118+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): Load> on 2024-02-14 00:00:00+00:00
+[2025-03-27T17:29:12.135+0000] {standard_task_runner.py:60} INFO - Started process 1239 to run task
+[2025-03-27T17:29:12.152+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'workflow', 'Load', 'scheduled__2024-02-14T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/workflow.py', '--cfg-path', '/tmp/tmpoppq2vlh']
+[2025-03-27T17:29:12.157+0000] {standard_task_runner.py:88} INFO - Job 72: Subtask Load
+[2025-03-27T17:29:12.272+0000] {task_command.py:423} INFO - Running <TaskInstance: workflow.Load scheduled__2024-02-14T00:00:00+00:00 [running]> on host 77747a310b55
+[2025-03-27T17:29:12.466+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='muict building' AIRFLOW_CTX_DAG_ID='workflow' AIRFLOW_CTX_TASK_ID='Load' AIRFLOW_CTX_EXECUTION_DATE='2024-02-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-14T00:00:00+00:00'
+[2025-03-27T17:29:12.470+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-27T17:29:12.472+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo Load data to storage']
+[2025-03-27T17:29:12.497+0000] {subprocess.py:86} INFO - Output:
+[2025-03-27T17:29:12.500+0000] {subprocess.py:93} INFO - Load data to storage
+[2025-03-27T17:29:12.501+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-27T17:29:12.551+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=workflow, task_id=Load, execution_date=20240214T000000, start_date=20250327T172911, end_date=20250327T172912
+[2025-03-27T17:29:12.617+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-27T17:29:12.656+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
