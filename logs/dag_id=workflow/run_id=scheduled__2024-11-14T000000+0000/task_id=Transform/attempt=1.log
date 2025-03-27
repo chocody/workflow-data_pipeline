@@ -1,0 +1,17 @@
+[2025-03-27T16:49:42.975+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workflow.Transform scheduled__2024-11-14T00:00:00+00:00 [queued]>
+[2025-03-27T16:49:42.991+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workflow.Transform scheduled__2024-11-14T00:00:00+00:00 [queued]>
+[2025-03-27T16:49:42.992+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2025-03-27T16:49:43.048+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): Transform> on 2024-11-14 00:00:00+00:00
+[2025-03-27T16:49:43.062+0000] {standard_task_runner.py:60} INFO - Started process 15195 to run task
+[2025-03-27T16:49:43.070+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'workflow', 'Transform', 'scheduled__2024-11-14T00:00:00+00:00', '--job-id', '927', '--raw', '--subdir', 'DAGS_FOLDER/workflow.py', '--cfg-path', '/tmp/tmpmoe8f3ym']
+[2025-03-27T16:49:43.074+0000] {standard_task_runner.py:88} INFO - Job 927: Subtask Transform
+[2025-03-27T16:49:43.155+0000] {task_command.py:423} INFO - Running <TaskInstance: workflow.Transform scheduled__2024-11-14T00:00:00+00:00 [running]> on host 5ede9b49dd6b
+[2025-03-27T16:49:43.323+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='muict building' AIRFLOW_CTX_DAG_ID='workflow' AIRFLOW_CTX_TASK_ID='Transform' AIRFLOW_CTX_EXECUTION_DATE='2024-11-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-14T00:00:00+00:00'
+[2025-03-27T16:49:43.326+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-27T16:49:43.328+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo Transform into 3 tier of using data']
+[2025-03-27T16:49:43.361+0000] {subprocess.py:86} INFO - Output:
+[2025-03-27T16:49:43.362+0000] {subprocess.py:93} INFO - Transform into 3 tier of using data
+[2025-03-27T16:49:43.363+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-27T16:49:43.402+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=workflow, task_id=Transform, execution_date=20241114T000000, start_date=20250327T164942, end_date=20250327T164943
+[2025-03-27T16:49:43.446+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-27T16:49:43.468+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

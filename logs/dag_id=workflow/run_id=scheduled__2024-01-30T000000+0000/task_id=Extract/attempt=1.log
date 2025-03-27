@@ -1,0 +1,25 @@
+[2025-03-27T16:43:21.389+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: workflow.Extract scheduled__2024-01-30T00:00:00+00:00 [queued]>
+[2025-03-27T16:43:21.408+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: workflow.Extract scheduled__2024-01-30T00:00:00+00:00 [queued]>
+[2025-03-27T16:43:21.410+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2025-03-27T16:43:21.447+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): Extract> on 2024-01-30 00:00:00+00:00
+[2025-03-27T16:43:21.460+0000] {standard_task_runner.py:60} INFO - Started process 8443 to run task
+[2025-03-27T16:43:21.466+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'workflow', 'Extract', 'scheduled__2024-01-30T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/workflow.py', '--cfg-path', '/tmp/tmphz75m6ns']
+[2025-03-27T16:43:21.472+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask Extract
+[2025-03-27T16:43:21.576+0000] {task_command.py:423} INFO - Running <TaskInstance: workflow.Extract scheduled__2024-01-30T00:00:00+00:00 [running]> on host 5ede9b49dd6b
+[2025-03-27T16:43:21.716+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='muict building' AIRFLOW_CTX_DAG_ID='workflow' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2024-01-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-30T00:00:00+00:00'
+[2025-03-27T16:43:21.719+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-27T16:43:21.721+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'extracting data from API']
+[2025-03-27T16:43:21.746+0000] {subprocess.py:86} INFO - Output:
+[2025-03-27T16:43:21.748+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: extracting: command not found
+[2025-03-27T16:43:21.749+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2025-03-27T16:43:21.767+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2025-03-27T16:43:21.773+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=workflow, task_id=Extract, execution_date=20240130T000000, start_date=20250327T164321, end_date=20250327T164321
+[2025-03-27T16:43:21.793+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 10 for task Extract (Bash command failed. The command returned a non-zero exit code 127.; 8443)
+[2025-03-27T16:43:21.847+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-27T16:43:22.114+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
